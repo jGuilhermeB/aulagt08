@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.div-card {
+    border: 1px solid #230101;
+    width: 20%;
+    /* text-align: center; */
+
+}
+.div-card img{
+    max-width: 80% ;
+    position: relative;
+}
+.section-cards{
+    display: flex;
+    gap: 20px;    
+
+}
+.tag-p{
+    top: 0px;
+    right: 0px; ;
+    position: absolute;
+    background-color: rgb(64, 220, 124);
+    width: fit-content;
+    padding: 1px 3px;
+    border-radius: 6px;
+}
+.div-img{
+    position: relative;
+    
+}
