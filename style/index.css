@@ -12,7 +12,9 @@ header{
     display: flex;
     background-color: rgb(41, 41, 115);
     justify-content: space-between;
+    align-items: center;
     padding: 30px 100px;
+    
 }
 .form-header{
     width: 40%;
@@ -40,17 +42,18 @@ header{
 }
 .div-card {
     border: 1px solid #000000;
-    width: 15%;
+    width: 200px;
     /* text-align: center; */
 }
 
 .div-card  img {
-    width: 80%;
+    width: 100%;
     
 }
 
 .section-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -75,6 +78,8 @@ header{
     display: flex;
     justify-content: center;
     background-color: #c7b3b3;
+    height: 200px;
+
 }
 
 h2 > a {
