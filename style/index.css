@@ -5,8 +5,26 @@
     outline: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    color: aliceblue;
+    display: flex;
+    background-color: rgb(41, 41, 115);
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.nav-header, .nav-header ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
 
 }
+
+.lista-icone{
+    display: none;
+}
+
 .div-card {
     border: 1px solid #230101;
     width: 20%;

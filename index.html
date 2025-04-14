@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cards</title>
     <link rel="stylesheet" href="/style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <Header>
+
+    <h1>Livraria GT</h1>
+      <form>
+        <input type="text" >
+        <button><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+      </form>
+      <nav class="nav-header">
+        <ul>
+          <li>home</li>
+          <li>categorias</li>
+        </ul>
+        <ul>
+          <li class="lista-icone"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></li>
+          <li class="lista-icone"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></li>
+        </ul>
+      </nav>
+  </Header>
     <main>
       <section class="section-cards">
           <div class="div-card">
@@ -17,7 +39,7 @@
                 <h1>O homem mais rico da babilonia</h1>
                 <button>+</button>
                 <h2><a href="">Desenvolvimento pessoal</a></h2>
-                <p>40,99</p>
+                <p>R$ <span class="span-valor">49</span>,99</p>
           </div>
 
           <div class="div-card">
@@ -25,10 +47,14 @@
                 <img src="/assets/dalecariage.jpg" alt="">
                 <p class="tag-p">Frete Grátis</p>
             </div>
-            <h1></h1>
-            <button>+</button>
-            <h2><a href="">Desenvolvimento pessoal</a></h2>
-            <p>30,99</p>
+              <div class="div-texto">
+                  <div class="div-titulo">
+                    <h1>Como fazer amigos e influenciar pessoas</h1>
+                    <button>+</button>
+                  </div>
+                  <h2><a href="">Desenvolvimento pessoal</a></h2>
+                  <p>R$ <span class="span-valor">69</span>,99</p>
+            </div>
           </div>
 
           <div class="div-card">
@@ -36,10 +62,10 @@
                 <img src="/assets/maisesperto.jpg" alt="">
                 <p class="tag-p">Frete Grátis</p>
               </div>
-            <h1></h1>
+            <h1>Mais esperto que o diabo</h1>
             <button>+</button>
             <h2><a href="">Quadrinhos</a></h2>
-            <p>19,99</p>
+            <p>R$ <span class="span-valor">49</span>,99</p>
           </div>
 
           <div class="div-card">
@@ -47,10 +73,10 @@
             <img src="/assets/monica.jpg" alt="">
             <p class="tag-p">Frete Grátis</p>
           </div>
-            <h1></h1>
+            <h1>Turma da mônica</h1>
             <button>+</button>
             <h2><a href="">Infantil</a></h2>
-            <p>10,99</p>
+            <p>R$ <span class="span-valor">10</span>,99</p>
           </div>
 
           <div class="div-card">
@@ -58,10 +84,10 @@
                <img src="/assets/rio.jpg" alt="">
                <p class="tag-p">Frete Grátis</p>
             </div>
-            <h1></h1>
+            <h1>Tudo é rio</h1>
             <button>+</button>
             <h2><a href="">Historias emocionantes</a></h2>
-            <p>50,99</p>
+            <p>R$ <span class="span-valor">59</span>,99</p>
           </div>
 
           <div class="div-card">
@@ -69,10 +95,10 @@
               <img src="/assets/sonhos.jpg" alt="">
               <p class="tag-p">Frete Grátis</p>
             </div>
-            <h1></h1>
+            <h1>O Deus que destroi sonhos </h1>
             <button>+</button>
             <h2><a href="">Historias emocionantes</a></h2>
-            <p>45,99</p>
+            <p>R$ <span class="span-valor">45</span>,99</p>
           </div>
 
       </section>
