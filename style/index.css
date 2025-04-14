@@ -42,12 +42,12 @@ header{
 }
 .div-card {
     border: 1px solid #000000;
-    width: 200px;
+    width: 230px;
     /* text-align: center; */
 }
 
 .div-card  img {
-    width: 100%;
+    width: 90%;
     
 }
 
@@ -77,7 +77,7 @@ header{
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #c7b3b3;
+    background-color: #e4caca;
     height: 200px;
 
 }
@@ -120,4 +120,8 @@ h2 > a {
 .span-valor {
     font-size: 28px;
     font-weight: 600;
+}
+/* widthb<= 995 ou (max width: 998px) */
+@media screen  and (width <= 995px){
+    
 }
