@@ -1,48 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
 }
-header{
-    color: aliceblue;
+
+header {
+    color: #fff;
     display: flex;
-    background-color: rgb(41, 41, 115);
+    background-color: #242e56;
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
-    
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
-.form-header{
+
+.form-header {
     width: 40%;
     display: flex;
 }
-.form-header input {
+
+.form-header input{
+    border-radius: 5px 0 0 5px;
     height: 40px;
-    width: 80%; 
-   border-radius: 5px 0 0 5px;
+    width: 80%;
 }
-.form-header button{
-    padding: 12px;
+
+.form-header button {
     border-radius: 0 5px 5px 0;
-   
+    padding: 12px;
 }
-.nav-header, .nav-header ul{
+
+.nav-header, .nav-header ul {
     display: flex;
-    list-style: none;
     gap: 20px;
-
+    list-style: none;
 }
 
-.lista-icone{
+.lista-icone {
     display: none;
 }
+
 .div-card {
-    border: 1px solid #000000;
-    width: 210px;
+    border: 1px solid #9f9c9c;
+    width: 230px;
     /* text-align: center; */
 }
 
@@ -53,6 +60,7 @@ header{
 
 .section-cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -62,24 +70,18 @@ header{
     right: 10px;
     /* z-index: -1; */
     position: absolute;
-    background-color: #3abf2b;
+    background-color: #88e473;
     width: fit-content;
     padding: 1px 3px;
     border-radius: 10px;
 }
 
-
-.div-img{
-    position: relative;
-    
-}
 .div-img {
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #e4caca;
-    height: 200px;
-
+    background-color: #f4eeee;
+    height: 270px;
 }
 
 h2 > a {
@@ -91,8 +93,8 @@ h2 > a {
 }
 
 .div-titulo button {
-    background-color: #000000;
-    color: #aaa2a2;
+    background-color: #000;
+    color: #fff;
     width: 25px;
     height: 25px;
     font-size: 20px;
@@ -104,8 +106,8 @@ h2 > a {
 }
 
 .div-titulo button:hover {
-    background-color: rgb(114, 13, 13);
-    color: #0000;
+    background-color: #fff;
+    color: #000;
     border: 1px solid #000;
 }
 
@@ -117,28 +119,29 @@ h2 > a {
 .div-texto {
     padding: 10px;
 }
+
 .span-valor {
     font-size: 28px;
     font-weight: 600;
 }
-/* widthb<= 995 ou (max width: 998px) */
-@media screen  and (width <= 998px){
-    header{
-
+/* (width <= 998px) ou (max-width: 998px) Tablet deitado */ 
+@media screen and (width <= 998px) {    
+    header {
         flex-wrap: wrap;
     }
-    form-header{
+    .form-header {
         order: 2;
         width: 100%;
     }
-    .form-header input{
+    .form-header input {
         width: 120%;
     }
-    .lista-icone{
+
+    .lista-icone {
         display: inline;
     }
-    
-    }
+
     .lista-links li {
         display: none;
     }
+}
