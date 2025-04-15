@@ -50,13 +50,18 @@ header {
 main {
     display: grid;
     grid-template-columns: 1fr 3fr;
-
 }
-.aside-filtro{
+
+.aside-filtro {
     position: sticky;
-    top:  110px;
+    top: 110px;
     height: fit-content;
 }
+
+.button-hidden {
+    display: none;
+}
+
 .div-card {
     border: 1px solid #9f9c9c;
     width: 230px;
@@ -134,19 +139,56 @@ h2 > a {
     font-size: 28px;
     font-weight: 600;
 }
-footer{
-    background-color: rgb(62, 78, 115) ;
-    color: #f4eeee;
+
+footer {
+    padding: 20px 100px;
+    background-color: #242e56;
+    color: #fff;
+    display: block;
 }
-.nav-footer a{
-    color: beige;
+
+.div-footer-flex {
+    display: flex;
+    justify-content: space-between;
 }
-.nav-footer a:hover{
+
+.nav-footer {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 100px;
+}
+
+.nav-footer ul {
+    list-style: none;
+}
+
+.nav-footer a {
+    color: #fff;
+}
+
+.nav-footer a:hover {
     text-decoration: underline;
 }
 
+hr {
+   border: 1px solid #fff;
+   width: 50%;
+}
+
+.div-footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+}
+.hidden-button{
+    display: none;
+}
+
 /* (width <= 998px) ou (max-width: 998px) Tablet deitado */ 
-@media screen and (width <= 998px) {    
+@media screen and (width <= 998px) {   
     header {
         flex-wrap: wrap;
     }
@@ -157,12 +199,32 @@ footer{
     .form-header input {
         width: 120%;
     }
-
+    
     .lista-icone {
         display: inline;
     }
-
+    
     .lista-links li {
         display: none;
     }
-}
+
+    main {
+        display: flex;
+    }
+    .aside-filtro {
+        display: none;
+    } 
+    .button-hidden {
+        display: block;
+        position: absolute;
+        padding: 10px;
+        
+    }
+    .div-footer-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-footer {
+        padding: 0;
+    }
+}   
